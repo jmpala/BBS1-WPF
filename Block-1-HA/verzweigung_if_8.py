@@ -10,12 +10,12 @@ da f dann keine quadratische Funktion wäre.
 Ebenso kann eine quadratische Funktion entweder keine oder eine oder zwei Nullstellen haben. Die
 verschiedenen Fälle sind zu berücksichtigen.
 """
-import math
+import cmath
 
 
 def pq_formel(a, b, c):#
-    zero_1 = (-b + math.sqrt(b ** 2 + 4 * a * c)) / (2 * a)
-    zero_2 = (-b - math.sqrt(b ** 2 + 4 * a * c)) / (2 * a)
+    zero_1 = (-b + cmath.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
+    zero_2 = (-b - cmath.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
     return [zero_1, zero_2]
 
 
